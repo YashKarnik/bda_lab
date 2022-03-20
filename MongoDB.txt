@@ -1,0 +1,7 @@
+Queries
+1. db.restaurant.find({}).limit(3)
+2. db.restaurant.find({"_id":ObjectId("621c6f1944806b2304495db0")})
+3. db.restaurant.insertOne({"test":"inserted document"})
+4. db.restaurant.insertMany([{"test":"inserted document2"},{"test":"inserted document3"},])
+5. db.restaurant.updateOne({"_id":ObjectId("621c6f1944806b2304495db0"),{$set:{"test":"update documeny"}}})
+6. db.deleteOne({"_id":ObjectId("621c6f1944806b2304495db0"})
