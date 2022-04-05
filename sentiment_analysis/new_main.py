@@ -36,10 +36,17 @@ for i in tokenized_words:
         POS += 1
     elif(i in negative):
         NEG += 1
-print(POS, NEG)
+
 
 fig, ax1 = plt.subplots()
 ax1.bar(['Positive', 'Negative'], [POS, NEG])
 fig.autofmt_xdate()
-# plt.savefig('graph.png')
+
+if(POS > NEG):
+    print("Positive Sentiment")
+elif(POS < NEG):
+    print("Negative Sentiment")
+else:
+    print("Neutral Sentiment")
+
 plt.show()
